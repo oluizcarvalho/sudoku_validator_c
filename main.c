@@ -1,3 +1,22 @@
+/* 
+ * Sudoku Validator
+ *
+ * Este é um código em C que resolve um sudoku. Ele usa threads para verificar se as linhas, 
+ * colunas e regiões 3x3 do tabuleiro contêm os números de 1 a 9, sem repetições. O programa 
+ * lê os valores do tabuleiro de um arquivo, verifica se o arquivo foi aberto corretamente, e 
+ * então imprime o tabuleiro. Em seguida, o programa cria 27 threads (uma para cada linha, 
+ * coluna e região 3x3) e as inicia. Cada thread valida sua respectiva linha, coluna ou região 
+ * 3x3 e armazena o resultado em um array "validaThreads". Depois que todas as threads terminarem, 
+ * o programa verifica o array "validaThreads" e imprime "Tabuleiro válido!" se todas as threads 
+ * retornarem com sucesso, ou "Tabuleiro inválido!" caso contrário.
+ * 
+ * @attention Os valores do arquivo devem ser separados por espaço para conseguirem serem lidos corretamente
+ *
+ * @author: Luiz Carvalho
+ *
+ * @copyright (c) 2023
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
