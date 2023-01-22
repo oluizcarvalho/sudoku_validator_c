@@ -11,5 +11,5 @@ gcc -o main main.c -lpthread
 
 ## Para rodar os casos de teste
 ```bash
-./main input.txt 
+./main puzzle.txt 
 ```
